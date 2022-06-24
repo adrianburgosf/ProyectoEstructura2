@@ -1,32 +1,49 @@
 ========================
-BUILD OUTPUT DESCRIPTION
+INSTRUCCIONES
 ========================
+A continuacion esta escrito los pasos para poder entender todas las funciones de este programa:
+El programa consta de un menu sencillo con las siguientes opciones:
+1. Archivos
+2. Campos
+3. Registros
+4. Indices
+5. Utilidades
+En la ventana de archivos, hay varias opciones, estas son:
+1. Nuevo archivo
+2. Salvar archivo
+3. Abrir Archivo
+4. Cerrar Archivo
+5. Cerrar aplicacion
+En este caso, el procedimiento es bastante intuitivo.
+Ninguna funcion del proyecto sirve si no hay ningun archivo abierto.
+En nuevo archivo el usuario crea un archivo donde quiera en su computadora, a partir de este punto, el programa podra seguir adelante.
+En el caso de abrir archivo, podemos abrir un archivo que cumpla con la extension correcta, en este caso ".jae", a partir de este punto el programa podra seguir adelante.
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
+La ventana de Campos cuenta con las siguientes opciones:
+1. Crear Campos
+2. Modificar Campo
+3. Eliminar Campo
+En los casos de modificar y eliminar, un campo debera estar seleccionado en la tabla en la que se listan los campos, esta tabla esta a simple vista.
+Los botones de campos dejaran de funcionar una vez un registro exista.
 
-To run the project from the command line, go to the dist folder and
-type the following:
+La ventana de Registros cuenta con las siguientes opciones:
+1. Crear Registro
+2. Modificar Registro
+3. Eliminar Registro
+4. Buscar registro
+De igual manera que en los campos, para modificar/eliminar un registro debera estar seleccionado en la tabla en la que estos se listan, esta esta a simple vista.
+Despues de cualquier cambio en esta ventana, se debera de guardar el archivo para que este pueda funcionar de  manera correcta. Ejemplo:
+Si insertamos registros, para que las demas funciones sirvan, deberemos ir a la ventana de Archivo y salvar el archivo, despues de este punto todo funcionara en orden.
+Esto es para cualquier caso, para modificar y eliminar igual. 
 
-java -jar "ProyectoEstructura2.jar" 
+La ventana de Indices no hace nada ya que no se realizo.
 
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
+La ventana de Utilidades cuenta con dos sencillos botones:
+1. Excel
+2. XML
+Cada boton crea un archivo del tipo especificado en el lugar donde el usuario quiera. Es importante destacar que los tiempos de creacion de estos archivos dependeran del tamaño del archivo de Registros.
 
-Notes:
-
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+Adicional:
+Las siguientes funciones no fueron realizadas:
+1. Ambas opciones de indices
+2. Cruzar Archivos
